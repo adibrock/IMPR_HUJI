@@ -1,0 +1,8 @@
+When the blending of 2 images is performed with a varying number of 
+pyramid levels,  the blending quality changes. 
+The more levels we have in the pyramid, the better the blending is. 
+When reconstructing the blended image from  the merged Laplacian pyramid, 
+we blend the merged image every level of the reconstruction. 
+Therefore, the more levels we have in the pyramids, the more we blend 
+the two images together, and the edges (where the two images 
+were joined) look better combined.

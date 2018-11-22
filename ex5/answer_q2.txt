@@ -1,0 +1,18 @@
+How to use the workflow implemented to train a network to estimate the high-res counterpart
+of a low-res image:
+
+
+The corruption function will be to take the original image, reduce it and then expand the 
+reduced image back to it's original size (using the expand and reduce functions from ex3).
+
+In order to estimate the high-res counterpart of a given image we will follow the next steps:
+
+If we want to enlarge the given image and estimate the high-resolution enlarged image we
+will expand the given image before using restore_image, than give the expanded image to the
+restore_image function that will estimate the high-resolution enlarged image using the trained
+network.
+
+If we want to simply take an image an sharpen the quality (we want the high-res counterpart to 
+be a high-res image of the same size as the original image), we will simply give it to 
+restore_image that will predict the high-res image usong the trained network.
+

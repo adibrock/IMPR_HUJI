@@ -1,0 +1,4 @@
+If the center of the gaussian in the space domain will not be at the (0,0) of the image, we 
+will not get a properly blurred image. When we multiply the image with the gaussian kernel 
+pointwise in the frequenct domain we will not get a low-pass filter, so the image will not be 
+blurred.

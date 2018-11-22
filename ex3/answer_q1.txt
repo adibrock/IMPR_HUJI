@@ -1,0 +1,2 @@
+Multiplying each level with a different value chages the weight we give
+the details saved in each level - the frequencies in each level.

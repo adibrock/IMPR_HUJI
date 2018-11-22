@@ -1,0 +1,2 @@
+As the convolution theorum states, convolution in the spatial domain f(x,y) is equivalent to 
+pointwise multiplication in the frequency domain F(u,v), threfore both results are the same.

@@ -1,0 +1,4 @@
+When Blending is performed with a filter in different sizes (for the 
+images laplacian pyramids), we will get a more blurry blended image 
+with a big filter, and a sharper image with a small filter. 
+

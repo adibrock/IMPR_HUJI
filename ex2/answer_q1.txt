@@ -1,0 +1,5 @@
+When using convolution or fourier to calculate the magnitude images, we get two different 
+magnitude images because when we use convolution to derive, we only use an approximation to the 
+derivatives with epsilon = 1: lim(epsilon --> 0) (f(i,j) - f(i-epsilon, j))/epsilon
+while when using the fourier transformation to calculte the derivative we calculate the exact 
+derivative and  dont lose any information.

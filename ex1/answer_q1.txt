@@ -1,0 +1,15 @@
+Answer to Q1:
+If a division will  have  a  gray  level  segment  with  no  pixels,
+the  procedure  will  crash - WHY?
+
+If the division will happen to have an empty segment
+(i.e. no pixels in the image have a gray level from the gray levels in the segment)
+Then, when we come to calculate the gray level for that segment, the procedure will
+crash, because we divide by zero.
+
+ q[i] = (sum from z[i] to z[i+1]: z*hist[z]) / (sum from z[i] to z[i+1]: hist[z])
+
+In a case the division will give us a segment empty of pixels, when we calculate the
+histogram of all the pixels in the segment we will get 0 (because no pixels in the image
+have these gray levels), and when we will try to calculate q - we will divide by 0 and the
+procedure will crash.

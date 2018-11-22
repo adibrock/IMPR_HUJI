@@ -1,0 +1,12 @@
+For the denoising task, with a singal residual block I did not get a very good restored image,
+and with 3 blocks I got a much better image. With 5 residual blocks the restored image 
+did not seem as good as the one i got with 3 blocks. As can be seen in the graph I got, the more
+residual blocks the model had (from 1 to 3) the less val_loss I got. But when the number of
+blocks was increased to 4 and 5 I got a larger loss than with 3 blocks.
+
+For the deblurring task, the more residual blocks the model had, the better the output was.
+with 1 residual block the restored image was not very clear, but the more residual blocks I 
+used in the model the closer the restored image was to the original image. Also, in the graph 
+for the deblurring task, the more residual blocks the model had, the lower val_loss was
+- meaning the output was better.
+
